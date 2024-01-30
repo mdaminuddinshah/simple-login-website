@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('./gambar/pixelcut-export.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.nav {
+    /* border: 1px solid black; */
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    background-color: rgba(33, 236, 219, 0.5);
+
+    /* MANTAP */
+    grid-template-columns: 0.5fr 1.5fr 0.5fr;
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+}
+.list {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+}
+
+.list li {
+    list-style: none;
+    
+}
+
+.list li a {
+    color: white;
+    font-size: 27px;
+}
+.list li a:hover {
+    color: black;
+    transition: 0.4s;
+}
+.search {
+    /* border: 1px solid black; */
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.search input {
+    width: 100%;
+    height: 40px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 4px 4px 0 0 rgba(1,1,1,0.4);
+    border: 1px solid black;
+    background-color: rgba(255,255,255,0.8);
+    text-align: center;
+    font-size: 17px;
+}
+
+.search input:focus {
+    border-color: rgba(1,1,1,0.1);
+    outline: none;
+}
+
+.search input:hover {
+    background-color: white;
+    border: 1.5px solid black;
+}
+.search input::placeholder {
+    color: grey;
+    padding: 10px;
+    text-align: center;
+}
+/* MANTAP */
+.search input:focus::placeholder {
+    color: transparent;
+}
+
+.search a button {
+    height: 40px;
+    width: 70px;
+    outline: none;
+    box-shadow: 4px 4px 0 0 rgba(1,1,1,0.4);
+    background-color: white;
+    border: 1px solid black;
+    font-size: 15px;
+
+    /* MANTAP */
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.search a button:hover {
+    background-color: rgba(255,255,255,0.3);
+    transition: 0.4s;
+}
+
+.section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 80vh;
+    /* border: 1px solid black; */
+}
+
+.para {
+    /* border: 1px solid black; */
+    padding: 20px;
+    position: relative;
+    height: 80vh;
+}
+.para h2 {
+    font-size: 60px;
+    color: #1b1b22;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    padding-top: 60px;
+    /* border: 1px solid black; */
+    padding-left: 70px;
+}
+.para p {
+    position: absolute;
+    font-size: 22px;
+    /* border: 1px solid red; */
+    margin-top: 200px;
+    margin-right: 20px;
+    letter-spacing: 1px;
+    padding-left: 70px;
+    width: 500px;
+    margin-top: 220px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.para button {
+    position: absolute;
+    margin-top: 400px;
+    margin-left: 70px;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    outline: none;
+    border-color: rgba(255,255,255,0.3);
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: 4px 5px 0 0 rgba(0,0,0,0.9);
+}
+
+.para button:hover {
+    background-color: transparent;
+    color: white;
+    transition: 0.5s;
+    border-color: white;
+}
+
+.form {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 40px;
+}
+.container {
+    border: 1px solid rgba(0,0,0,0.4);
+    display: flex;
+    flex-direction: column;
+    width: 70vh;
+    height: 75vh;
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    padding-top: 50px;
+}
+.container:hover {
+    background-color: rgba(255,255,255,0.5);
+    border-color: rgba(255,255,255,0.5);
+}
+
+.title {
+    font-size: 50px;
+    color: #0c1131;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+
+.username, .password {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.username input, .password input {
+    width: 50vh;
+    height: 4vh;
+    border-radius: 20px;
+    padding: 20px;
+    background: rgba(255,255,255,0.7);
+}
+.username input::placeholder, .password input::placeholder {
+    color: black;
+}
+.username input:hover, .password input:hover {
+    background: rgba(1,1,1,0.1);
+}
+.username input:focus, .password input:focus {
+    background: rgba(1,1,1,0.1);
+}
+.username i, .password i {
+    font-size: 25px;
+    margin-left: 5px;
+}
+.checkbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.checkbox {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+.remember-me {
+    display: flex;
+    margin: 10px;
+}
+.remember-me input {
+    width: 15px;
+    height: 15px;
+    border-color: black;
+}
+.remember-me label {
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.reset-password {
+    margin: 10px;
+}
+.reset-password a {
+    color: black;
+    font-size: 18px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.reset-password a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.button button {
+    width: 150px;
+    height: 30px;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.button button:hover {
+    background: rgba(0,0,0,0.3);
+    color: white;
+}
+.register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.register p {
+    font-size: 20px;
+}
+.register a {
+    margin-left: 10px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+.register a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+
+
+
+
+
