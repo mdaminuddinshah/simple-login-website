@@ -224,6 +224,7 @@ body {
 }
 .username input:focus, .password input:focus {
     background: rgba(1,1,1,0.1);
+    outline: none;
 }
 .username i, .password i {
     font-size: 25px;
